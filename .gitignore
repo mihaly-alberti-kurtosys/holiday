@@ -3,3 +3,7 @@ app/dist
 dist
 node_modules
 app/bower_components
+app/bower_components/**/*
+npm-debug.log
+.svn
+cms_user.js

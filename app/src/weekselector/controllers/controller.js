@@ -2,9 +2,9 @@
 
 angular.module('holidayApp')
   .controller('WeekselectorControllerCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.days = [];
+
+    for (var i = 1; i <= 7; i++) {
+    	$scope.days.push(i);
+    };
   });

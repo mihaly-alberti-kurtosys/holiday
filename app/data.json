@@ -1,17 +1,16 @@
-{
-	data: [
-		{
-			user: "2343245435",
-			fromDate: "", 
-			toDate: "", 
-			approved: true,
-			approvedBy: "yyy",
-			reason: "homesick",
-		}
-	]
-}
-
-
+HolidayDataService:
+	{
+		data: [
+			{
+				user: "2343245435",
+				fromDate: "", 
+				toDate: "", 
+				approved: true,
+				approvedBy: "yyy",
+				reason: "homesick",
+			}
+		]
+	}
 
 user: {
 	id: 324234324,
@@ -22,11 +21,3 @@ user: {
 	permissionLevel: 1|2|3 // 1: admin, 2: whatever
 
 }
-
-
-grunt -> grunt-cli
-bower
-
-npm install grunt-cli -g
-
-bower install jquery

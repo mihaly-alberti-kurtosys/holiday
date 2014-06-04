@@ -1,12 +1,14 @@
 'use strict';
 
 angular.module('holidayApp')
-  .directive('weekselector/directive', function () {
+  .directive('week', function () {
     return {
-      template: '<div></div>',
-      restrict: 'E',
+      scope: true,
+      templateUrl: '/src/weekselector/views/weekselector.html',
+      controller: 'WeekselectorControllerCtrl',
+      restrict: 'E', // A, C
       link: function postLink(scope, element, attrs) {
-        element.text('this is the weekselector/directive directive');
+        
       }
     };
   });
