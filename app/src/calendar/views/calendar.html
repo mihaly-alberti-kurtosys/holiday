@@ -1,1 +1,4 @@
-<ul><li ng-repeat="day in days" ng-bind="day"></li></ul>
+<div>
+	<label ng-bind="calendar[0].month | monthName"></label>
+	<ul><li ng-repeat="day in calendar" ng-bind="day.day"></li></ul>
+</div>

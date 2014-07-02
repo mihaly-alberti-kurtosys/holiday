@@ -1,10 +1,7 @@
 'use strict';
 
 angular.module('holidayApp')
-  .controller('CalendarControllerCtrl', function ($scope) {
-    $scope.days = [];
+	.controller('CalendarControllerCtrl', function ($scope, Calendarservice) {
 
-    for (var i = 1; i <= 31; i++) {
-    	$scope.days.push(i);
-    };
-  });
+		$scope.calendar = Calendarservice.getCalendar();
+	});
