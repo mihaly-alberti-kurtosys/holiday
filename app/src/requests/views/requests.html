@@ -1,7 +1,10 @@
-<ul>
-	<li ng-repeat="req in requests">
-		<span ng-bind="req.user"></span>
-		<span ng-bind="req.fromDate"></span>
-		<span ng-bind="req.toDate"></span>
-	</li>
-</ul>
+<div class="requests">
+	<label for="">Holiday Requests</label>
+	<ul>
+		<li ng-repeat="req in requests">
+			<span ng-bind="req.user"></span>
+			<span ng-bind="req.fromDate"></span>
+			<span ng-bind="req.toDate"></span>
+		</li>
+	</ul>
+</div>

@@ -81,24 +81,14 @@ angular.module('holidayApp')
 
 		function drawCal(firstDay, lastDate, date, monthName, year) {
 
-
-			// create array of abbreviated day names
-			var weekDay = new Array(7);
-			weekDay[0] = "Sun";
-			weekDay[1] = "Mon";
-			weekDay[2] = "Tues";
-			weekDay[3] = "Wed";
-			weekDay[4] = "Thu";
-			weekDay[5] = "Fri";
-			weekDay[6] = "Sat";
-
-			// declaration and initialization of two variables to help with tables
+		// declaration and initialization of two variables to help with tables
 			var digit = 1;
 			var curCell = 1;
 
 			for (var row = 1; row <= Math.ceil((lastDate + firstDay - 1) / 7); ++row) {
 
 				for (var col = 1; col <= 7; ++col) {
+
 					if (digit > lastDate){
 						break;
 					}
